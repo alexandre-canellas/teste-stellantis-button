@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Close App</title>
+</head>
+<body>
+  <button onclick="closeApp()">Close Program</button>
+
+  <script>
+    function closeApp() {
+      fetch('/close-app')
+        .then(response => response.text())
+        .then(alert);
+    }
+  </script>
+</body>
+</html>
